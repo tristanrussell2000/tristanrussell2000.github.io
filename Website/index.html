@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="granim.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <canvas id="canvas-image-blending"></canvas>
+
+    <div class="main-content" style="text-align: center; width: 100%; position: absolute">
+      <center>
+
+        <div class="" style="height: 500px;">
+          <h1 style="padding-top: 230px; color: white;">Hi, my name is Tristan Russell</h1>
+          <p style="padding-top: 25px; color: white;" id="app"></p>
+        </div>
+
+        <h2 style="padding-bottom: 10px; padding-top: 10px;">Introduction</h2>
+
+        <!-- Introduction -->
+        <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 20px; align-items: center;">
+          <div class="big-container-left">
+            <!-- <p class="time-text">Fun fact: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+            <p style="padding-bottom: 5px;">Hi, my name is Tristan Russell. I'm a driven and analytical UBC Cognitive Systems graduate with experience in software QA automation and machine learning. Committed to continuously learning new skills and delivering high quality solutions. Former Varsity Outdoor Club webmaster responsible for the club's website and email services.</p>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/portrait.jpg" class="title-image">
+          </div>
+        </div>
+
+        <!-- <h2 style="padding-bottom: 20px">My Current Projects</h2> -->
+
+        <!-- Current Project #1 -->
+        <!-- <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
+          <div class="big-container-left">
+            <h3>Porttitor massa</h3>
+            <p class="time-text">May 2020 - TBD</p> Add your own dates -->
+            <!-- <p>Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Velit laoreet id donec ultrices. Libero volutpat sed cras ornare. Porttitor leo a diam sollicitudin tempor id eu. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Diam vel quam elementum pulvinar etiam. Porttitor rhoncus dolor purus non enim. Quam id leo in vitae. </p>
+            <button style="padding-bottom: 5px;" type="button" class="btn btn-outline-success" id="btn1">See more</button>
+          </div>
+          <div class="small-container-right">
+            <img src="assets/desk setup.webp" class="title-image">
+          </div>
+        </div> -->
+
+
+        <!-- Completed projects -->
+        <h2 style="padding-bottom: 20px">Projects and Work Experience</h2>
+
+        <!-- Completed Project #1 -->
+        <div class="flex-container" style="padding-bottom: 0px; padding-top: 50px;">
+          <div class="small-container-left">
+            <img src="assets/ultrasound1.png" alt="" class="title-image">
+          </div>
+          <div class="big-container-right">
+            <h3>Cognitive Systems Research Final Project</h3>
+            <p class="time-text">January 2023 - April 2023</p>
+  
+            <p style="padding-bottom: 10px;">Continued work on prostate cancer detection for a research project course by investigating the shortfalls of previously trained models</p>
+            <p style="padding-bottom: 10px;">Explored other pre-processing techniques which resulted in improved model performance</p>
+            <p style="padding-bottom: 10px;">Modified a MatLab program to adjust the ground truth cancer annotations, fixing alignment issues with the data set and producing better training data</p>
+
+            <!-- <button type="button" class="btn btn-outline-success" id="btn4">See more</button> -->
+          </div>
+        </div>
+
+        <!-- Completed Project #2 -->
+        <div class="flex-container" style="padding-bottom: 0; padding-top: 50px;">
+          <div class="small-container-left">
+            <img src="assets/ultrasound2.png" alt="" class="title-image">
+          </div>
+          <div class="big-container-right">
+            <h3>Junior Software Engineer Co-op, UBC ECE</h3>
+            <p class="time-text">May 2022 - August 2022</p>
+            <p style="padding-bottom: 10px;">Worked to detect cancer in unconventional data from a prostate ultrasound study, developed creative pre-processing methods to address issues with the dataset</p>
+            <p style="padding-bottom: 10px;">Experimented with custom and pretrained models, carefully logging and organizing all metrics</p>
+            <p style="padding-bottom: 10px;">Analyzed the results of 50 models and identified 3 key next steps for further work to improve model performance</p>
+            
+            <!-- <button type="button" class="btn btn-outline-success" id="btn5">See more</button> -->
+          </div>
+        </div>
+
+        <!-- Completed Project #3 -->
+        <div class="flex-container" style="padding-bottom: 0px; padding-top: 50px;">
+          <div class="small-container-left">
+            <img src="assets/voc_logo.jpg" alt="" class="title-image">
+          </div>
+          <div class="big-container-right">
+            <h3>UBC Varsity Outdoor Club Webmaster</h3>
+            <p class="time-text">April 2022 - April 2023</p>
+            <p style="padding-bottom: 10px;">Maintained and added features to the club’s PHP based website hosted in AWS</p>
+            <p style="padding-bottom: 10px;">Managed the website’s GitLab repo and MySQL database</p>
+            <p style="padding-bottom: 10px;">Created a survey for club members to give feedback about the website, analyzed the results, and made changes to the website to improve useability</p>
+            <a href="https://ubc-voc.com" target="_blank"><button type="button" class="btn btn-outline-success" id="btn6">Visit</button></a>
+          </div>
+        </div>
+
+        <!-- Completed Project #4 -->
+        <div class="flex-container" style="padding-bottom: 50px; padding-top: 50px;">
+          <div class="small-container-left">
+            <img src="assets/ABST.png" alt="" class="title-image">
+          </div>
+          <div class="big-container-right">
+            <h3>Associate QA Test Developer, Absolute Software</h3>
+            <p class="time-text">January 2020 - December 2020</p>
+            
+            <p style="padding-bottom: 10px;">Worked in the QA Automation team, a cross-functional agile team that maintained automated test frameworks for a Java microservice web app managed with Kubernetes</p>
+            <p style="padding-bottom: 10px;">Co-developed a web service to automatically setup and distribute clean test accounts for use in end-to-end automated test suites</p>
+            <p style="padding-bottom: 10px;">Wrote thorough unit tests for the test account service, developed and executed a test plan in JMeter to validate the service’s performance</p>
+            <p style="padding-bottom: 10px;">Reduced the number of false positive tests due to improper test account setup</p>
+            <p style="padding-bottom: 10px;">Collaborated with product teams to write new unit tests and integration tests</p>
+            <p style="padding-bottom: 10px;">Assisted in identifying and troubleshooting the services responsible for failed build verification tests</p>
+            <p style="padding-bottom: 10px;">Documented testing processes and recorded training videos for the onboarding of the next set of coop students</p>
+            
+            <!-- <a href="https://ubc-voc.com" target="_blank"><button type="button" class="btn btn-outline-success" id="btn6">Visit</button></a> -->
+          </div>
+        </div>
+
+
+        <!-- Hobbies -->
+        <h2 style="padding-bottom: 20px">My other hobbies</h2>
+
+        <div class="row">
+          <!-- FIRST HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <img src="assets/hiking.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Hiking</p>
+                <!-- <button type="button" class="btn btn-outline-success" id="hobbyBtn1">See more</button> -->
+              </div>
+            </div>
+          </div>
+          <!-- 2nd HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/skiing.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">(Backcountry) Skiing</p>
+                  <!-- <button type="button" class="btn btn-outline-success" id="hobbyBtn2">See more</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3rd HOBBY CARD -->
+          <div class="col-sm-4" style="padding-bottom: 20px">
+            <div class="card">
+              <div class="card">
+                <img src="assets/travel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Travel</p>
+                  <!-- <button type="button" class="btn btn-outline-success" id="hobbyBtn3">See more</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <h2 style="padding-bottom: 20px; padding-top: 40px;">Languages I speak</h2>
+        
+        <p>English  (native) - 100%</p>
+        
+        <p>French - 50%</p>
+      
+
+
+        <!-- Contact me / ending section -->
+        <h2 style="padding-bottom: 20px; padding-top: 80px;">Contact Me</h2>
+
+        <!-- <img src="assets/endingImage.jpeg"  class="rounded-corners"> -->
+
+        <br> <br>
+
+        <p style="padding-bottom: 20px;">I'd love to get in contact with you, so please feel free to reach me on any of these platforms. </p>
+
+        <a href="mailto:tristanrussell2000@gmail.com" class="fa fa-paper-plane" style="margin-right: 10px"></a>
+        <a href="https://www.linkedin.com/in/tristanrussell2000/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin" style="margin-right: 10px"></a>
+        <a href="https://github.com/tristanrussell2000" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a>
+
+        <br> <br> <br>
+
+        <p style="margin-top: 200px; margin-bottom: 0;">Made with ❤ with HTML, CSS, Javascript, & Bootstrap. Template from <a href="https://rosacodes.gumroad.com/l/personal-website-template">Rosacodes</a></p>
+
+        <!--MODALS-->
+
+        <!-- Modal for Button #1 - change inside information such as images and text to make it your own-->
+        <!-- <div id="modal1" class="modal">
+          <div class="modal-content">
+            <span class="closeModal1">&times;</span>
+            <h2>Porttitor massa</h2>
+            <br>
+            <div id="carouselIndicators1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/desksetup2.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/desksetup3.jpeg" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/desksetup4.webp" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>Amet consectetur adipiscing elit duis. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Eu facilisis sed odio morbi. Amet nisl suscipit adipiscing bibendum est ultricies integer quis.</p>
+            <p>Skills used:</p>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Google Firebase</li>
+            </ul>
+            <p>Skills learned:</p>
+            <ul>
+              <li>Marketing</li>
+            </ul>
+            <p>Amet nisl suscipit adipiscing bibendum est ultricies integer quis.</p>
+          </div>
+        </div> -->
+
+        <!--Button #6 goes to outside link, so no modal is necessary-->
+
+        <!-- MODALS FOR HOBBIES -->
+
+        <!-- Modal for Hobby Button #1 - change inside information such as images and text to make it your own-->
+        <!-- <div id="modalHobby1" class="modal">
+          <div class="modal-content">
+            <span class="closeModalHobby1">&times;</span>
+            <h2>Tennis</h2>
+            <br>
+            <div id="carouselIndicatorsHobby1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.pexels.com/photos/5730299/pexels-photo-5730299.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.pexels.com/photos/5739122/pexels-photo-5739122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://images.pexels.com/photos/5836917/pexels-photo-5836917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" style="height: 400px; object-fit: contain; width: 100%;" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <br>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsHobby1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+            <p>Egestas congue quisque egestas diam in arcu cursus euismod. Accumsan lacus vel facilisis volutpat est velit egestas dui. Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Enim ut tellus elementum sagittis vitae et leo duis. Neque gravida in fermentum et sollicitudin ac. Pharetra et ultrices neque ornare aenean euismod. Tincidunt id aliquet risus feugiat in ante metus dictum.</p>
+          </div>
+        </div> -->
+
+      </center>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
